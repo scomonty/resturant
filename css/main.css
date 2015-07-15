@@ -1,0 +1,145 @@
+body {
+	text-align: center;
+	overflow-x: hidden;
+	resize: none;
+	font-family: 'Lobster', cursive;
+}
+
+.first-slide {
+	background: linear-gradient(#8a8a8a, transparent 90%),
+	linear-gradient(0deg, #fff, transparent),
+				url('../image/steaks.jpg') no-repeat center;
+	background-size: cover;
+	min-height: 600px;
+}
+
+.first-slide-text {
+	padding-top: 75px;
+}
+
+
+.second-slide {
+	background-color: #fff;
+}
+
+
+.image-two {
+	border-radius: 5px;
+	box-shadow: -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
+}
+
+.separator {
+	background: linear-gradient(#fff, transparent 50%),
+	linear-gradient(0deg, #8a8a8a, transparent),
+	url('../image/water.jpg') no-repeat center;
+	background-size: cover;
+	min-height: 600px;
+}
+
+footer{
+    position: absolute; 
+    width: 100%;
+}
+
+.image-one:hover,
+.image-two:hover,
+.image-three:hover {
+	opacity: .6;
+}
+
+.foot {
+	border-bottom: 1px solid #8a8a8a;
+	border-top: 1px solid #8a8a8a;
+}
+
+.top {
+	margin-top: 15px;
+}
+
+.awards {
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+
+
+/******font styling ******************/
+
+.center {
+border: 5px solid #fff;
+color: white;
+padding: 10px;
+}
+.first-slide-text .center {
+	color: white;
+	font-size: 6.5em;
+}
+
+.first-slide-text h2 {
+	font-size: 3em;
+}
+
+.logo {
+	padding: 0 10px;
+	color: white;
+	font-size: 4.5em;
+}
+
+.cbutton {
+	font-size: 1.5em;
+	margin-top: 45px;
+}
+
+.story {
+	padding-top: 8px;
+}
+
+.foot a{
+	color: #9d9d9d;
+	text-decoration: none;
+}
+
+.foot a:hover{ 
+	color: #333;
+}
+
+#endtag {
+	color: #9d9d9d;
+}
+
+
+/*******SVG color transitions******/
+
+.demo-3 .box:hover svg line {
+	stroke: rgb(255,99,71);
+}
+
+.demo-3 .box:hover {
+	background: rgba(212,175,55,0.5);
+}
+
+
+.box svg line {
+	stroke: #fff;
+}
+
+/******media queries********/
+
+@media screen and (max-width: 767px) {
+.cbutton {
+	margin-top: 0;
+}
+.first-slide-text {
+	margin-top: 75px;
+}
+}
+
+@media screen and (max-width: 846px) {
+.cbutton {
+	margin-top: 0;
+}
+.first-slide-text {
+	margin-top: 50px;
+}
+
