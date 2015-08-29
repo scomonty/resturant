@@ -4,7 +4,6 @@ body {
 	resize: none;
 	font-family: 'Lobster', cursive;
 }
-
 .first-slide {
 	background: linear-gradient(#8a8a8a, transparent 90%),
 	linear-gradient(0deg, #fff, transparent),
@@ -12,24 +11,18 @@ body {
 	background-size: cover;
 	min-height: 600px;
 }
-
 .first-slide-text {
 	padding-top: 75px;
 }
-
-
 .second-slide {
 	background-color: #fff;
 }
-
-
 .image-two {
 	border-radius: 5px;
 	box-shadow: -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
 -moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
 box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
 }
-
 .separator {
 	background: linear-gradient(#fff, transparent 50%),
 	linear-gradient(0deg, #8a8a8a, transparent),
@@ -37,35 +30,22 @@ box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.3);
 	background-size: cover;
 	min-height: 600px;
 }
-
 footer{
     position: absolute; 
     width: 100%;
 }
-
-.image-one:hover,
-.image-two:hover,
-.image-three:hover {
-	opacity: .6;
-}
-
 .foot {
 	border-bottom: 1px solid #8a8a8a;
 	border-top: 1px solid #8a8a8a;
 }
-
 .top {
 	margin-top: 15px;
 }
-
 .awards {
 	margin-top: 8px;
 	margin-bottom: 10px;
 }
-
-
 /******font styling ******************/
-
 .center {
 border: 5px solid #fff;
 color: white;
@@ -75,57 +55,50 @@ padding: 10px;
 	color: white;
 	font-size: 6.5em;
 }
-
 .first-slide-text h2 {
 	font-size: 3em;
 }
-
 .logo {
 	padding: 0 10px;
 	color: white;
 	font-size: 4.5em;
 }
-
 .cbutton {
 	font-size: 1.5em;
 	margin-top: 45px;
 }
-
 .story {
 	padding-top: 8px;
 }
-
 .foot a{
 	color: #9d9d9d;
 	text-decoration: none;
 }
-
 .foot a:hover{ 
 	color: #333;
 }
-
 #endtag {
 	color: #9d9d9d;
 }
-
-
 /*******SVG color transitions******/
-
 .demo-3 .box:hover svg line {
 	stroke: rgb(255,99,71);
 }
-
 .demo-3 .box:hover {
 	background: rgba(212,175,55,0.5);
 }
-
-
 .box svg line {
 	stroke: #fff;
 }
-
 /******media queries********/
-
+@media screen and (max-width: 923px) {
+.cbutton {
+	margin-top: 0;
+}
+.first-slide-text {
+	margin-top: 50px;
+}
+}
 @media screen and (max-width: 767px) {
 .cbutton {
 	margin-top: 0;
@@ -134,12 +107,218 @@ padding: 10px;
 	margin-top: 75px;
 }
 }
-
 @media screen and (max-width: 846px) {
 .cbutton {
 	margin-top: 0;
 }
 .first-slide-text {
 	margin-top: 50px;
+}
+}
+
+
+
+
+//animation
+
+	@keyframes draw{
+100% {
+	stroke-dashoffset:0;
+}
+}
+	@-moz-keyframes draw{
+100% {
+	stroke-dashoffset:0;
+}
+}
+@-webkit-keyframes draw{
+100% {
+	stroke-dashoffset:0;
+}
+}
+
+.test {
+	 stroke: #101010;
+	stroke-width: .5; 
+	stroke-dasharray: 88; 
+	stroke-dashoffset: 88; 
+	animation: draw 5s linear forwards;
+	-moz-animation: draw 5s linear forwards;
+	-webkit-animation: draw 5s linear forwards;
+}
+
+@keyframes drop{
+100% {
+	stroke-dashoffset:0;
+	fill: #CD853F;
+}
+}
+	@-moz-keyframes drop{
+100% {
+	stroke-dashoffset:0;
+	fill: #CD853F;
+}
+}
+@-webkit-keyframes drop{
+100% {
+	stroke-dashoffset:0;
+	fill: #CD853F;
+}
+}
+
+.drip {
+	stroke: #DEB887;
+	stroke-width: .2; 
+	stroke-dasharray: 11; 
+	stroke-dashoffset: 11; 
+	animation: drop 5s linear forwards;
+	-moz-animation: drop 5s linear forwards;
+	-webkit-animation: drop 5s linear forwards;
+}
+@keyframes glasses{
+100% {
+	stroke-dashoffset:0;
+	fill:rgb(255,99,71);;
+}
+}
+	@-moz-keyframes glasses{
+100% {
+	stroke-dashoffset:0;
+	fill:rgb(255,99,71);;
+}
+}
+@-webkit-keyframes glasses{
+100% {
+	stroke-dashoffset:0;
+	fill:rgb(255,99,71);;
+}
+}
+
+.glasses {
+	 stroke: rgb(255,99,71);
+	stroke-width: 5; 
+	stroke-dasharray: 1755; 
+	stroke-dashoffset: 1755; 
+	animation: glasses 5s linear forwards;
+	-moz-animation: glasses 5s linear forwards;
+	-webkit-animation: glasses 5s linear forwards;
+}
+@keyframes musta{
+100% {
+	stroke-dashoffset:0;
+	fill: #CD853F;
+}
+}
+	@-moz-keyframes musta{
+100% {
+	stroke-dashoffset:0;
+	fill: #CD853F;
+}
+}
+@-webkit-keyframes musta{
+100% {
+	stroke-dashoffset:0;
+	fill: #CD853F;
+}
+}
+
+.mustache {
+	 stroke: #DEB887;
+	stroke-width: 5; 
+	stroke-dasharray: 1364; 
+	stroke-dashoffset: 1364; 
+	animation: musta 5s linear forwards;
+	-moz-animation: musta 5s linear forwards;
+	-webkit-animation: musta 5s linear forwards;
+}
+@keyframes menu{
+100% {
+	stroke-dashoffset:0;
+	fill:rgb(255,99,71);
+}
+}
+@keyframes menu-two{
+100% {
+	stroke-dashoffset:0;
+	fill: #101010;
+}
+}
+	@-moz-keyframes menu{
+100% {
+	stroke-dashoffset:0;
+}
+}
+	@-moz-keyframes menu-two{
+100% {
+	stroke-dashoffset:0;
+	fill: #101010;
+}
+}
+@-webkit-keyframes menu{
+100% {
+	stroke-dashoffset:0;
+}
+}
+@-webkit-keyframes menu-two{
+100% {
+	stroke-dashoffset:0;
+	fill: #101010;
+}
+}
+.menu-two, .menu-three, .menu-four, .menu-five, .menu-six{
+	stroke: rgb(255,99,71);
+	stroke-width: 3;  
+	animation: menu 5s linear forwards;
+	-moz-animation: menu 5s linear forwards;
+	-webkit-animation: menu 5s linear forwards;
+}
+.menu-one {
+	stroke: #101010;
+	stroke-width: 3; 
+	animation: menu-two 5s linear forwards;
+	-moz-animation: menu-two 5s linear forwards;
+	-webkit-animation: menu-two 5s linear forwards;
+
+}
+.menu-one {
+	stroke-dasharray: 1450; 
+	stroke-dashoffset: 1450;
+}
+.menu-two {
+	stroke-dasharray: 245; 
+	stroke-dashoffset: 245;
+}
+.menu-three {
+	stroke-dasharray: 230; 
+	stroke-dashoffset: 230;
+}
+.menu-four {
+	stroke-dasharray: 233; 
+	stroke-dashoffset: 233;
+}
+.menu-five {
+	stroke-dasharray: 209; 
+	stroke-dashoffset: 209;
+}
+.menu-six {
+	stroke-dasharray: 379; 
+	stroke-dashoffset: 379;
+}
+.box-in, .box-in-three {
+	height: 270px;
+}
+.box-in-two {
+	height: 350px;
+}
+.lift {
+	transition: all 0.5s ease;
+}
+.lift:hover {
+transform: translate(0px, -15px);
+	-webkit-transform: translate(0px, -15px);
+    -moz-transform: translate(0px, -15px);
+    -o-transform: translate(0px, -15px);
+    -ms-t-ransform: translate(0px, -15px);
+    cursor: pointer;
 }
 
